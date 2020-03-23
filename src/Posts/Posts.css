@@ -1,0 +1,82 @@
+#reviews .post {
+    background-color: rgb(250, 214, 214);
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-title{
+    height: 50%;
+}
+
+.post-title h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.post-info {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+#reviews .post-profile, #reviews .post-rating {
+    width: 50%;
+}
+
+@media screen and (max-width: 599px){
+    #filter-wrapper{
+        width: 100%;
+        display: flex;
+    }
+
+    #filter-wrapper .filter {
+       flex: 1;
+       height: 30px;
+    }
+
+    #post-wrapper {
+        width: 100%;
+    }
+} 
+
+@media screen and (min-width: 600px){
+    #reviews {
+        display: flex;
+        flex-direction: row;
+    }
+    #reviews #filter-wrapper {
+        min-width: 180px;
+        width: 35%;
+        /* flex: 1; */
+        margin-right: 10px;
+    }
+    #reviews .filter{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    #reviews #filter-wrapper {
+        max-width: 200px;
+        margin-right: 10px;
+    }
+    #reviews #post-wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    #reviews .post{
+        width: 49%;
+        display: inline-block;
+    }
+}

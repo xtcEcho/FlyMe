@@ -1,0 +1,55 @@
+#flight-rating {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#flight-rating h3{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flight-rating #score {
+    width: 28%;
+}
+
+#flight-rating #pros, #flight-rating #cons {
+    width: 34%
+}
+
+#flight-rating h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 599px){
+    #flight-rating > div {
+        /* max-width: 160px; */
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #article-container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    #flight-rating > div {
+        max-width: 260px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    #article-container{
+        width: 80%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #flight-rating > div {
+        max-width: 300px;
+    }
+}

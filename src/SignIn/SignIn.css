@@ -1,0 +1,34 @@
+#member-container {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#member-container ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#member-container li {
+    display: inline-block;
+}
+
+#member-container #log-in {
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 599px){
+
+}
+
+@media screen and (min-width:600px){
+
+}
+
+@media screen and (min-width:900px){
+    
+}
